@@ -14,7 +14,15 @@ export default new Router({
     {
       path: '/account',
       name: 'Account',
-      component: resolve => require(['@/views/account/index'], resolve)
+      redirect: '/accountLogin',
+      component: resolve => require(['@/views/account/index'], resolve),
+      children: [
+        {
+          path: '/accountLogin',
+          name: 'Login',
+          component: resolve => require(['@/views/account/login'], resolve)
+        }
+      ]
     }
   ]
 })

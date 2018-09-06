@@ -1,5 +1,7 @@
 <template>
-  <div class=""></div>
+  <div class="login-container">
+    <div></div>
+  </div>
 </template>
 
 <script type='text/ecmascript-6'>
