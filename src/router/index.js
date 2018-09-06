@@ -21,8 +21,18 @@ export default new Router({
           path: '/accountLogin',
           name: 'Login',
           component: resolve => require(['@/views/account/login'], resolve)
+        },
+        {
+          path: '/accountRegister',
+          name: 'Register',
+          component: resolve => require(['@/views/account/register'], resolve)
         }
       ]
+    },
+    {
+      path: '/list',
+      name: 'List',
+      component: resolve => require(['@/views/main/list/index'], resolve)
     }
   ]
 })
